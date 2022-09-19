@@ -19,7 +19,7 @@
  *::after {
      margin: 0;
      padding: 0;
-     border: none;
+     border: 0;
      -webkit-box-sizing: border-box;
      box-sizing: border-box;
      font-family: var(--ff-Outfit);
@@ -37,16 +37,15 @@
 
  .container {
      background: var(--c-White);
-     border-radius: 20px;
-     width: 320px;
-     height: 500px;
-     padding: 16px 16px 45px 16px;
+     border-radius: 1.25em;
+     max-width: 20em;
+     padding: 1em 1em 2.8125em 1em;
  }
 
  .qr-image {
      width: 100%;
      height: auto;
-     border-radius: 10px;
+     border-radius: 0.625em;
  }
 
  .content {
@@ -55,20 +54,26 @@
 
  .content h1 {
      font-weight: var(--fw-700);
-     font-size: 22px;
+     font-size: 1.375rem;
  }
 
  .content p {
      color: var(--c-Grayish-blue);
-     font-size: 15px;
+     font-size: 0.9375rem;
      padding: 1em .3em 0;
  }
 
  .attribution {
-     font-size: 11px;
+     font-size: 0.6875rem;
      text-align: center;
  }
 
  .attribution a {
      color: hsl(228, 45%, 44%);
+ }
+
+ @media (max-width:50em) {
+    body {
+        margin: 1.25em;
+    }
  }
